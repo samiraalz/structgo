@@ -1,0 +1,32 @@
+package main
+
+import "fmt"
+
+type mypost struct {
+	title string
+	name string
+	date int
+	text
+}
+
+type text struct {
+	HowoldareYou  int
+	whatsyourname string
+}
+
+
+
+
+func main()  {
+
+	p:= mypost{title:"Hello Word" , name:"samira", date:2016 , text:text{23 ,"samira"}}
+	p.text.whatsyourname = "samira"
+	if p.whatsyourname=="samira" && p.HowoldareYou==23 {
+		fmt.Println("its ok")
+	}else {
+		fmt.Println("thats very bad")
+	}
+
+	fmt.Println(p)
+
+}
